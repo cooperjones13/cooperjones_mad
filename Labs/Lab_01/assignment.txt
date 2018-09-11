@@ -1,0 +1,6 @@
+Create an app that includes the following:
+
+-at least two buttons that change both an image and some text when tapped
+-adaptive for different size classes(this includes portrait and landscape orientations and different device sizes)
+-app icons
+-launch screen

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cats_or_dogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do You Like Dogs or Cats?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHp-DD-kgJ">
+                                <rect key="frame" x="44" y="96" width="289" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cats_or_dogs" translatesAutoresizingMaskIntoConstraints="NO" id="kJr-Nq-o8a">
+                                <rect key="frame" x="40" y="304" width="296" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="USb-50-4AQ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DpR-kP-n01">
+                                <rect key="frame" x="79" y="188" width="218" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eym-9A-yDA">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                        <state key="normal" title="Cats!"/>
+                                        <connections>
+                                            <action selector="chooseArt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDS-qK-1Zj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0s-b6-1sB">
+                                        <rect key="frame" x="113" y="0.0" width="105" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                        <state key="normal" title="Dogs!"/>
+                                        <connections>
+                                            <action selector="chooseArt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q91-f0-cGx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86100819194949541" green="0.85813665687621077" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DpR-kP-n01" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BEW-K4-PeE"/>
+                            <constraint firstItem="kJr-Nq-o8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BXY-Wc-NwJ"/>
+                            <constraint firstItem="kHp-DD-kgJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="ByO-xt-s7m"/>
+                            <constraint firstItem="DpR-kP-n01" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="188" id="Eco-NY-qt6"/>
+                            <constraint firstItem="kHp-DD-kgJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="HKj-pJ-xp0"/>
+                            <constraint firstItem="DpR-kP-n01" firstAttribute="top" secondItem="kHp-DD-kgJ" secondAttribute="bottom" constant="57" id="O8X-HJ-ceO"/>
+                            <constraint firstItem="kJr-Nq-o8a" firstAttribute="centerX" secondItem="DpR-kP-n01" secondAttribute="centerX" id="QdN-BG-Eno"/>
+                            <constraint firstItem="kJr-Nq-o8a" firstAttribute="top" secondItem="DpR-kP-n01" secondAttribute="bottom" constant="55" id="Uw8-qG-G6w"/>
+                            <constraint firstItem="kHp-DD-kgJ" firstAttribute="centerX" secondItem="DpR-kP-n01" secondAttribute="centerX" id="lKw-Ju-0gk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayImage" destination="kJr-Nq-o8a" id="zya-gv-yJc"/>
+                        <outlet property="labelOutput" destination="kHp-DD-kgJ" id="Kgt-pC-cIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cats_or_dogs" width="335" height="285"/>
+    </resources>
+</document>

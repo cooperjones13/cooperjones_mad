@@ -36,6 +36,11 @@ class View2Controller: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         billNameTF.delegate = self
         billAmountTF.delegate = self
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

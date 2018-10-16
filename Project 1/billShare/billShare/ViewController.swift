@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var monthYear: UILabel!
     @IBOutlet weak var totalDue: UILabel!
     
+    @IBAction func clearArray(_ sender: Any) {
+        billArray = []
+        displayBills()
+    }
     
     func dataFileURL(_ filename:String) -> URL?{
         //returns an array of URLs for the document directory in the user's home directory
@@ -44,30 +48,45 @@ class ViewController: UIViewController {
             billStack.removeArrangedSubview(view)
             view.isHidden = true
         }
-        for bill in billArray{
-            total += bill.amount!
-            
-            let newBillDisp = UIStackView()
-            newBillDisp.distribution = .fillEqually
-            billStack.addArrangedSubview(newBillDisp)
+        if billArray.isEmpty{
+            let emptyError = UILabel()
+            emptyError.text = "No Bills Entered"
+            emptyError.textAlignment = NSTextAlignment.center
+            billStack.addArrangedSubview(emptyError)
+        }
+        else{
+            for bill in billArray{
+                total += bill.amount!
+                
+                let newBillDisp = UIStackView()
+                newBillDisp.distribution = .fillEqually
+                billStack.addArrangedSubview(newBillDisp)
+                
+                let billName = UILabel()
+                billName.textAlignment = NSTextAlignment.left
+                
+                billName.text = bill.name
+                newBillDisp.addArrangedSubview(billName)
+                
+                let billDate = UILabel()
+                let formatter = DateFormatter()
+                formatter.dateFormat = "MM-dd"
+                billDate.text = "Due: " + formatter.string(from: bill.dueDate!)
+                billDate.textAlignment = NSTextAlignment.center
 
-            let billName = UILabel()
-            billName.textAlignment = NSTextAlignment.left
-        
-            billName.text = bill.name
-            newBillDisp.addArrangedSubview(billName)
-
-            let billDate = UILabel()
-            let formatter = DateFormatter()
-            formatter.dateFormat = "MM-dd"
-            billDate.text = formatter.string(from: bill.dueDate!)
-            billDate.textAlignment = NSTextAlignment.center
-            newBillDisp.addArrangedSubview(billDate)
-
-            let billAmount = UILabel()
-            billAmount.text = "$"+String(format:"%.2f",bill.amount!)
-            billAmount.textAlignment = NSTextAlignment.right
-            newBillDisp.addArrangedSubview(billAmount)
+                
+                newBillDisp.addArrangedSubview(billDate)
+                
+                let billAmount = UILabel()
+                billAmount.text = "$"+String(format:"%.2f",bill.amount!)
+                billAmount.textAlignment = NSTextAlignment.right
+                newBillDisp.addArrangedSubview(billAmount)
+                
+                if (bill.dueDate! < Date()){
+                    let red = UIColor(displayP3Red: 1.0, green: 0.0, blue: 0.0, alpha: 0.75)
+                    billDate.textColor = red
+                }
+            }
         }
         totalDue.text = "$"+String(format:"%.2f",total)
         let formatter = DateFormatter()

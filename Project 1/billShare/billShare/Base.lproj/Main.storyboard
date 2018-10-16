@@ -22,26 +22,30 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAn-au-yEO">
                                 <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                                 <items>
+                                    <barButtonItem title="Clear" id="f1S-WK-u1y">
+                                        <connections>
+                                            <action selector="clearArray:" destination="BYZ-38-t0r" id="NJB-9a-Tot"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Uo5-0S-8qr"/>
                                     <barButtonItem title="Add Bill" id="v05-iJ-x8N">
                                         <connections>
                                             <segue destination="EUM-ZD-0Uw" kind="presentation" id="mCm-xD-iAo"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NFn-kb-Moy"/>
                                 </items>
                             </toolbar>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="ghghd" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x74-3d-WBG">
-                                <rect key="frame" x="13" y="30" width="295" height="430"/>
+                                <rect key="frame" x="13" y="30" width="295" height="434"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTH/YEAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEP-eH-om5">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="31.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="0.46666872791580449" green="0.61525070173669905" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="5n1-vz-y3v">
-                                        <rect key="frame" x="0.0" y="51.5" width="295" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="56" width="295" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Total Due:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYx-jn-x8p">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
@@ -58,13 +62,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdT-jY-aXE">
-                                        <rect key="frame" x="0.0" y="92" width="295" height="31.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="96.5" width="295" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.46666872790000002" green="0.61525070169999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="top" ambiguous="YES" axis="vertical" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbG-js-Qt5">
-                                        <rect key="frame" x="0.0" y="143.5" width="295" height="286.5"/>
+                                    <stackView opaque="NO" contentMode="top" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cbG-js-Qt5">
+                                        <rect key="frame" x="0.0" y="147.5" width="295" height="286.5"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -74,7 +78,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="x74-3d-WBG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="9cy-fe-9OZ"/>
                             <constraint firstItem="aAn-au-yEO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P46-c6-mMF"/>
@@ -103,16 +107,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h2M-9d-tFE">
-                                <rect key="frame" x="12.5" y="40" width="295" height="366"/>
+                                <rect key="frame" x="12.5" y="40" width="295" height="367"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z3-gf-ZEi">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.46666872790000002" green="0.61525070169999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daL-T2-qeK">
-                                        <rect key="frame" x="0.0" y="50" width="295" height="30"/>
+                                        <rect key="frame" x="0.0" y="51" width="295" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYX-D9-cRy">
                                                 <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
@@ -132,7 +136,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czo-EN-dAi">
-                                        <rect key="frame" x="0.0" y="100" width="295" height="30"/>
+                                        <rect key="frame" x="0.0" y="101" width="295" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHX-hO-ofj">
                                                 <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
@@ -152,7 +156,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVZ-wd-rHh">
-                                        <rect key="frame" x="0.0" y="150" width="295" height="216"/>
+                                        <rect key="frame" x="0.0" y="151" width="295" height="216"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzW-S6-aTZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="216"/>
@@ -162,6 +166,7 @@
                                             </label>
                                             <datePicker contentMode="center" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="VmU-Bj-mK5">
                                                 <rect key="frame" x="45" y="0.0" width="250" height="216"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="AvZ-Ig-roL"/>
                                                     <constraint firstAttribute="width" secondItem="VmU-Bj-mK5" secondAttribute="height" multiplier="125:108" id="IId-c4-Ptn"/>
@@ -194,7 +199,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="h2M-9d-tFE" firstAttribute="centerX" secondItem="v9U-tN-8nv" secondAttribute="centerX" id="Uq5-w0-JFy"/>
                             <constraint firstItem="h2M-9d-tFE" firstAttribute="top" secondItem="AC9-3r-vBa" secondAttribute="top" constant="20" id="uNd-99-4jw"/>

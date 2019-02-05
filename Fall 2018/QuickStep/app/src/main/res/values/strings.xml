@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuickStep</string>
+    <string name="pick_time">SET TIME</string>
+    <string name="pick_steps">SET STEPS</string>
+    <string name="steps">steps</string>
+    <string name="zeroes_2">00</string>
+    <string name="zeroes_3">000</string>
+    <string name="zero_time">00:00</string>
+    <string name="display_steps">000/000</string>
+    <string name="steps_upper">STEPS</string>
+    <string name="step_count_error">StepCounter N/A On Virtual Devices</string>
+</resources>

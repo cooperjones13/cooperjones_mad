@@ -12,14 +12,34 @@ class ViewController: UITableViewController{
     
     var monsterNamesList = [String]()
     var monsterData = MonsterDataModelController()
+    var searchController = UISearchController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         monsterData.loadData()
         monsterNamesList=monsterData.getMonsterNames()
         navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
+        //self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.title = "Monsters"
+        
+        //search results
+        let resultsController = SearchResultsController() //create an instance of our SearchResultsController class
+        resultsController.monsterData =  monsterData//set the allwords property to our words array
+        searchController = UISearchController(searchResultsController:
+        resultsController) //initialize our search controller with the resultsController when it has search results to display
+        //search bar configuration
+        searchController.searchBar.placeholder = "Enter a search term"
+        //place holder text
+        searchController.searchBar.sizeToFit() //sets appropriate size forthe search bar
+        tableView.tableHeaderView=searchController.searchBar //install the search bar as the table header
+        searchController.searchResultsUpdater = resultsController //sets the instance to update search results
+        
+        //application instance
+        let app = UIApplication.shared
+        //subscribe to the UIApplicationWillResignActiveNotification notification
+        NotificationCenter.default.addObserver(self, selector:
+            #selector(ViewController.applicationWillResignActive(_:)), name: UIApplication.willResignActiveNotification, object: app)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -85,6 +105,23 @@ class ViewController: UITableViewController{
         monsterData.addMonster(newMonster: moveMonster, newIndex: toRow)
         tableView.reloadData()
     }
+    
+    @objc func applicationWillResignActive(_ notification: NSNotification){
+        monsterData.writeData()
+    }
 
+    @IBAction func unwindSegue(_ segue:UIStoryboardSegue){
+        if segue.identifier=="doneSegue"{
+            let source = segue.source as! AddMonsterViewController
+            //only add a country if there is text in the textfield
+            if (source.newMonster != nil){
+                //add country to our data model instance
+                monsterData.addMonster(newMonster: source.newMonster, newIndex: monsterData.getMonsterNames().count)
+                //add country to the array
+                monsterNamesList.append(source.newMonster.monsterName)
+                tableView.reloadData()
+            }
+        }
+    }
 }
 

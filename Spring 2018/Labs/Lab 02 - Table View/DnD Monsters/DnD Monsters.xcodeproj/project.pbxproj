@@ -14,9 +14,11 @@
 		E9F9FE3D221D088D000C6A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F9FE3B221D088D000C6A42 /* LaunchScreen.storyboard */; };
 		E9F9FE48221D088D000C6A42 /* DnD_MonstersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FE47221D088D000C6A42 /* DnD_MonstersTests.swift */; };
 		E9F9FE53221D088D000C6A42 /* DnD_MonstersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FE52221D088D000C6A42 /* DnD_MonstersUITests.swift */; };
-		E9F9FE63221D0E0A000C6A42 /* Monsters.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9F9FE62221D0E0A000C6A42 /* Monsters.plist */; };
 		E9F9FE65221D0FAA000C6A42 /* MonsterDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FE64221D0FAA000C6A42 /* MonsterDataController.swift */; };
 		E9F9FE67221D1382000C6A42 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FE66221D1382000C6A42 /* DetailViewController.swift */; };
+		E9F9FE69221D3127000C6A42 /* SearchResultsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FE68221D3127000C6A42 /* SearchResultsControllerTableViewController.swift */; };
+		E9F9FE6B221D40E8000C6A42 /* AddMonsterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FE6A221D40E8000C6A42 /* AddMonsterViewController.swift */; };
+		E9F9FE6F221D525F000C6A42 /* monsterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9F9FE6E221D525F000C6A42 /* monsterData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +52,11 @@
 		E9F9FE4E221D088D000C6A42 /* DnD MonstersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DnD MonstersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F9FE52221D088D000C6A42 /* DnD_MonstersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnD_MonstersUITests.swift; sourceTree = "<group>"; };
 		E9F9FE54221D088D000C6A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9F9FE62221D0E0A000C6A42 /* Monsters.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Monsters.plist; sourceTree = "<group>"; };
 		E9F9FE64221D0FAA000C6A42 /* MonsterDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDataController.swift; sourceTree = "<group>"; };
 		E9F9FE66221D1382000C6A42 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E9F9FE68221D3127000C6A42 /* SearchResultsControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsControllerTableViewController.swift; sourceTree = "<group>"; };
+		E9F9FE6A221D40E8000C6A42 /* AddMonsterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonsterViewController.swift; sourceTree = "<group>"; };
+		E9F9FE6E221D525F000C6A42 /* monsterData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = monsterData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +109,15 @@
 			children = (
 				E9F9FE32221D088D000C6A42 /* AppDelegate.swift */,
 				E9F9FE34221D088D000C6A42 /* ViewController.swift */,
+				E9F9FE68221D3127000C6A42 /* SearchResultsControllerTableViewController.swift */,
 				E9F9FE36221D088D000C6A42 /* Main.storyboard */,
 				E9F9FE66221D1382000C6A42 /* DetailViewController.swift */,
 				E9F9FE39221D088D000C6A42 /* Assets.xcassets */,
 				E9F9FE3B221D088D000C6A42 /* LaunchScreen.storyboard */,
-				E9F9FE62221D0E0A000C6A42 /* Monsters.plist */,
+				E9F9FE6A221D40E8000C6A42 /* AddMonsterViewController.swift */,
 				E9F9FE64221D0FAA000C6A42 /* MonsterDataController.swift */,
 				E9F9FE3E221D088D000C6A42 /* Info.plist */,
+				E9F9FE6E221D525F000C6A42 /* monsterData.plist */,
 			);
 			path = "DnD Monsters";
 			sourceTree = "<group>";
@@ -240,8 +246,8 @@
 			files = (
 				E9F9FE3D221D088D000C6A42 /* LaunchScreen.storyboard in Resources */,
 				E9F9FE3A221D088D000C6A42 /* Assets.xcassets in Resources */,
+				E9F9FE6F221D525F000C6A42 /* monsterData.plist in Resources */,
 				E9F9FE38221D088D000C6A42 /* Main.storyboard in Resources */,
-				E9F9FE63221D0E0A000C6A42 /* Monsters.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +274,10 @@
 			files = (
 				E9F9FE35221D088D000C6A42 /* ViewController.swift in Sources */,
 				E9F9FE65221D0FAA000C6A42 /* MonsterDataController.swift in Sources */,
+				E9F9FE69221D3127000C6A42 /* SearchResultsControllerTableViewController.swift in Sources */,
 				E9F9FE33221D088D000C6A42 /* AppDelegate.swift in Sources */,
 				E9F9FE67221D1382000C6A42 /* DetailViewController.swift in Sources */,
+				E9F9FE6B221D40E8000C6A42 /* AddMonsterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,6 +44,10 @@ class RestaurantDataModelController{
         }
     }
     
+    func getRestaurant(index:Int) -> Restaurant {
+        return allData[index]
+    }
+    
     func getRestaurants() -> [String]{
         var restaurants = [String]()
         for restaurant in allData{

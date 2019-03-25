@@ -13,6 +13,7 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var restaurants = [String]()
     var restaurantData = RestaurantDataModelController()
+    var searchController = UISearchController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,18 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        let resultsController = SearchResultsController() //create an instance of our SearchResultsController class
+        resultsController.restaurantData = restaurantData//set the allwords property to our words array
+        searchController = UISearchController(searchResultsController:
+            resultsController) //initialize our search controller with the resultsController when it has search results to display
+        //search bar configuration
+        searchController.searchBar.placeholder = "Enter a search term"
+        //place holder text
+        searchController.searchBar.sizeToFit() //sets appropriate size forthe search bar
+        tableView.tableHeaderView=searchController.searchBar //install the search bar as the table header
+        searchController.searchResultsUpdater = resultsController //sets the instance to update search results
+        
         //application instance
         let app = UIApplication.shared
         //subscribe to the UIApplicationWillResignActiveNotification notification
@@ -62,7 +75,7 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell", for: indexPath)
 
         let restaurant = restaurants[indexPath.row]
         cell.textLabel!.text = restaurant

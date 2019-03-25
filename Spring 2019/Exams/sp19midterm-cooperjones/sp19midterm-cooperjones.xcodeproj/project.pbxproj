@@ -18,6 +18,7 @@
 		E99B39EC224942D1002C97E9 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39EB224942D1002C97E9 /* Restaurant.swift */; };
 		E99B39EE22494395002C97E9 /* restaurants.plist in Resources */ = {isa = PBXBuildFile; fileRef = E99B39ED22494395002C97E9 /* restaurants.plist */; };
 		E99B39F022494EF6002C97E9 /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39EF22494EF6002C97E9 /* AddRestaurantViewController.swift */; };
+		E9B528E4224959C000C0960D /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B528E3224959C000C0960D /* SearchResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E99B39EB224942D1002C97E9 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		E99B39ED22494395002C97E9 /* restaurants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = restaurants.plist; sourceTree = "<group>"; };
 		E99B39EF22494EF6002C97E9 /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
+		E9B528E3224959C000C0960D /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				E99B39BB22494218002C97E9 /* AppDelegate.swift */,
 				E99B39BD22494218002C97E9 /* MasterViewController.swift */,
+				E9B528E3224959C000C0960D /* SearchResultsController.swift */,
 				E99B39EF22494EF6002C97E9 /* AddRestaurantViewController.swift */,
 				E99B39EB224942D1002C97E9 /* Restaurant.swift */,
 				E99B39ED22494395002C97E9 /* restaurants.plist */,
@@ -273,6 +276,7 @@
 				E99B39C022494218002C97E9 /* DetailViewController.swift in Sources */,
 				E99B39F022494EF6002C97E9 /* AddRestaurantViewController.swift in Sources */,
 				E99B39BE22494218002C97E9 /* MasterViewController.swift in Sources */,
+				E9B528E4224959C000C0960D /* SearchResultsController.swift in Sources */,
 				E99B39BC22494218002C97E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E99B39BC22494218002C97E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39BB22494218002C97E9 /* AppDelegate.swift */; };
+		E99B39BE22494218002C97E9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39BD22494218002C97E9 /* MasterViewController.swift */; };
+		E99B39C022494218002C97E9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39BF22494218002C97E9 /* DetailViewController.swift */; };
+		E99B39C322494218002C97E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99B39C122494218002C97E9 /* Main.storyboard */; };
+		E99B39C522494219002C97E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99B39C422494219002C97E9 /* Assets.xcassets */; };
+		E99B39C822494219002C97E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99B39C622494219002C97E9 /* LaunchScreen.storyboard */; };
+		E99B39D32249421A002C97E9 /* sp19midterm_cooperjonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39D22249421A002C97E9 /* sp19midterm_cooperjonesTests.swift */; };
+		E99B39DE2249421A002C97E9 /* sp19midterm_cooperjonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39DD2249421A002C97E9 /* sp19midterm_cooperjonesUITests.swift */; };
+		E99B39EC224942D1002C97E9 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39EB224942D1002C97E9 /* Restaurant.swift */; };
+		E99B39EE22494395002C97E9 /* restaurants.plist in Resources */ = {isa = PBXBuildFile; fileRef = E99B39ED22494395002C97E9 /* restaurants.plist */; };
+		E99B39F022494EF6002C97E9 /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B39EF22494EF6002C97E9 /* AddRestaurantViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E99B39CF2249421A002C97E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E99B39B022494218002C97E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99B39B722494218002C97E9;
+			remoteInfo = "sp19midterm-cooperjones";
+		};
+		E99B39DA2249421A002C97E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E99B39B022494218002C97E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99B39B722494218002C97E9;
+			remoteInfo = "sp19midterm-cooperjones";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E99B39B822494218002C97E9 /* sp19midterm-cooperjones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sp19midterm-cooperjones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99B39BB22494218002C97E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E99B39BD22494218002C97E9 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		E99B39BF22494218002C97E9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E99B39C222494218002C97E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E99B39C422494219002C97E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E99B39C722494219002C97E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E99B39C922494219002C97E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99B39CE2249421A002C97E9 /* sp19midterm-cooperjonesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sp19midterm-cooperjonesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99B39D22249421A002C97E9 /* sp19midterm_cooperjonesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sp19midterm_cooperjonesTests.swift; sourceTree = "<group>"; };
+		E99B39D42249421A002C97E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99B39D92249421A002C97E9 /* sp19midterm-cooperjonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sp19midterm-cooperjonesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99B39DD2249421A002C97E9 /* sp19midterm_cooperjonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sp19midterm_cooperjonesUITests.swift; sourceTree = "<group>"; };
+		E99B39DF2249421A002C97E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99B39EB224942D1002C97E9 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E99B39ED22494395002C97E9 /* restaurants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = restaurants.plist; sourceTree = "<group>"; };
+		E99B39EF22494EF6002C97E9 /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E99B39B522494218002C97E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99B39CB2249421A002C97E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99B39D62249421A002C97E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E99B39AF22494218002C97E9 = {
+			isa = PBXGroup;
+			children = (
+				E99B39BA22494218002C97E9 /* sp19midterm-cooperjones */,
+				E99B39D12249421A002C97E9 /* sp19midterm-cooperjonesTests */,
+				E99B39DC2249421A002C97E9 /* sp19midterm-cooperjonesUITests */,
+				E99B39B922494218002C97E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E99B39B922494218002C97E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99B39B822494218002C97E9 /* sp19midterm-cooperjones.app */,
+				E99B39CE2249421A002C97E9 /* sp19midterm-cooperjonesTests.xctest */,
+				E99B39D92249421A002C97E9 /* sp19midterm-cooperjonesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99B39BA22494218002C97E9 /* sp19midterm-cooperjones */ = {
+			isa = PBXGroup;
+			children = (
+				E99B39BB22494218002C97E9 /* AppDelegate.swift */,
+				E99B39BD22494218002C97E9 /* MasterViewController.swift */,
+				E99B39EF22494EF6002C97E9 /* AddRestaurantViewController.swift */,
+				E99B39EB224942D1002C97E9 /* Restaurant.swift */,
+				E99B39ED22494395002C97E9 /* restaurants.plist */,
+				E99B39BF22494218002C97E9 /* DetailViewController.swift */,
+				E99B39C122494218002C97E9 /* Main.storyboard */,
+				E99B39C422494219002C97E9 /* Assets.xcassets */,
+				E99B39C622494219002C97E9 /* LaunchScreen.storyboard */,
+				E99B39C922494219002C97E9 /* Info.plist */,
+			);
+			path = "sp19midterm-cooperjones";
+			sourceTree = "<group>";
+		};
+		E99B39D12249421A002C97E9 /* sp19midterm-cooperjonesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E99B39D22249421A002C97E9 /* sp19midterm_cooperjonesTests.swift */,
+				E99B39D42249421A002C97E9 /* Info.plist */,
+			);
+			path = "sp19midterm-cooperjonesTests";
+			sourceTree = "<group>";
+		};
+		E99B39DC2249421A002C97E9 /* sp19midterm-cooperjonesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E99B39DD2249421A002C97E9 /* sp19midterm_cooperjonesUITests.swift */,
+				E99B39DF2249421A002C97E9 /* Info.plist */,
+			);
+			path = "sp19midterm-cooperjonesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E99B39B722494218002C97E9 /* sp19midterm-cooperjones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99B39E22249421A002C97E9 /* Build configuration list for PBXNativeTarget "sp19midterm-cooperjones" */;
+			buildPhases = (
+				E99B39B422494218002C97E9 /* Sources */,
+				E99B39B522494218002C97E9 /* Frameworks */,
+				E99B39B622494218002C97E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sp19midterm-cooperjones";
+			productName = "sp19midterm-cooperjones";
+			productReference = E99B39B822494218002C97E9 /* sp19midterm-cooperjones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E99B39CD2249421A002C97E9 /* sp19midterm-cooperjonesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99B39E52249421A002C97E9 /* Build configuration list for PBXNativeTarget "sp19midterm-cooperjonesTests" */;
+			buildPhases = (
+				E99B39CA2249421A002C97E9 /* Sources */,
+				E99B39CB2249421A002C97E9 /* Frameworks */,
+				E99B39CC2249421A002C97E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E99B39D02249421A002C97E9 /* PBXTargetDependency */,
+			);
+			name = "sp19midterm-cooperjonesTests";
+			productName = "sp19midterm-cooperjonesTests";
+			productReference = E99B39CE2249421A002C97E9 /* sp19midterm-cooperjonesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E99B39D82249421A002C97E9 /* sp19midterm-cooperjonesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99B39E82249421A002C97E9 /* Build configuration list for PBXNativeTarget "sp19midterm-cooperjonesUITests" */;
+			buildPhases = (
+				E99B39D52249421A002C97E9 /* Sources */,
+				E99B39D62249421A002C97E9 /* Frameworks */,
+				E99B39D72249421A002C97E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E99B39DB2249421A002C97E9 /* PBXTargetDependency */,
+			);
+			name = "sp19midterm-cooperjonesUITests";
+			productName = "sp19midterm-cooperjonesUITests";
+			productReference = E99B39D92249421A002C97E9 /* sp19midterm-cooperjonesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E99B39B022494218002C97E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Cooper Jones";
+				TargetAttributes = {
+					E99B39B722494218002C97E9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E99B39CD2249421A002C97E9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E99B39B722494218002C97E9;
+					};
+					E99B39D82249421A002C97E9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E99B39B722494218002C97E9;
+					};
+				};
+			};
+			buildConfigurationList = E99B39B322494218002C97E9 /* Build configuration list for PBXProject "sp19midterm-cooperjones" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E99B39AF22494218002C97E9;
+			productRefGroup = E99B39B922494218002C97E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99B39B722494218002C97E9 /* sp19midterm-cooperjones */,
+				E99B39CD2249421A002C97E9 /* sp19midterm-cooperjonesTests */,
+				E99B39D82249421A002C97E9 /* sp19midterm-cooperjonesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E99B39B622494218002C97E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99B39C822494219002C97E9 /* LaunchScreen.storyboard in Resources */,
+				E99B39C522494219002C97E9 /* Assets.xcassets in Resources */,
+				E99B39C322494218002C97E9 /* Main.storyboard in Resources */,
+				E99B39EE22494395002C97E9 /* restaurants.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99B39CC2249421A002C97E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99B39D72249421A002C97E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E99B39B422494218002C97E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99B39EC224942D1002C97E9 /* Restaurant.swift in Sources */,
+				E99B39C022494218002C97E9 /* DetailViewController.swift in Sources */,
+				E99B39F022494EF6002C97E9 /* AddRestaurantViewController.swift in Sources */,
+				E99B39BE22494218002C97E9 /* MasterViewController.swift in Sources */,
+				E99B39BC22494218002C97E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99B39CA2249421A002C97E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99B39D32249421A002C97E9 /* sp19midterm_cooperjonesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99B39D52249421A002C97E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99B39DE2249421A002C97E9 /* sp19midterm_cooperjonesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E99B39D02249421A002C97E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99B39B722494218002C97E9 /* sp19midterm-cooperjones */;
+			targetProxy = E99B39CF2249421A002C97E9 /* PBXContainerItemProxy */;
+		};
+		E99B39DB2249421A002C97E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99B39B722494218002C97E9 /* sp19midterm-cooperjones */;
+			targetProxy = E99B39DA2249421A002C97E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E99B39C122494218002C97E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99B39C222494218002C97E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E99B39C622494219002C97E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99B39C722494219002C97E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E99B39E02249421A002C97E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E99B39E12249421A002C97E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E99B39E32249421A002C97E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "sp19midterm-cooperjones/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cooperjones.sp19midterm-cooperjones";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E99B39E42249421A002C97E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "sp19midterm-cooperjones/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cooperjones.sp19midterm-cooperjones";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E99B39E62249421A002C97E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "sp19midterm-cooperjonesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cooperjones.sp19midterm-cooperjonesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sp19midterm-cooperjones.app/sp19midterm-cooperjones";
+			};
+			name = Debug;
+		};
+		E99B39E72249421A002C97E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "sp19midterm-cooperjonesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cooperjones.sp19midterm-cooperjonesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sp19midterm-cooperjones.app/sp19midterm-cooperjones";
+			};
+			name = Release;
+		};
+		E99B39E92249421A002C97E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "sp19midterm-cooperjonesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cooperjones.sp19midterm-cooperjonesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sp19midterm-cooperjones";
+			};
+			name = Debug;
+		};
+		E99B39EA2249421A002C97E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "sp19midterm-cooperjonesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cooperjones.sp19midterm-cooperjonesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sp19midterm-cooperjones";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E99B39B322494218002C97E9 /* Build configuration list for PBXProject "sp19midterm-cooperjones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99B39E02249421A002C97E9 /* Debug */,
+				E99B39E12249421A002C97E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99B39E22249421A002C97E9 /* Build configuration list for PBXNativeTarget "sp19midterm-cooperjones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99B39E32249421A002C97E9 /* Debug */,
+				E99B39E42249421A002C97E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99B39E52249421A002C97E9 /* Build configuration list for PBXNativeTarget "sp19midterm-cooperjonesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99B39E62249421A002C97E9 /* Debug */,
+				E99B39E72249421A002C97E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99B39E82249421A002C97E9 /* Build configuration list for PBXNativeTarget "sp19midterm-cooperjonesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99B39E92249421A002C97E9 /* Debug */,
+				E99B39EA2249421A002C97E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E99B39B022494218002C97E9 /* Project object */;
+}
